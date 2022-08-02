@@ -6,6 +6,11 @@
     background-position: center;
     height: 100vh;
 }
+header{
+    position: relative;
+    position: fixed;
+    width: 100%;
+}
 .nav{
     height: 4rem;
 }
@@ -71,6 +76,6 @@
     justify-content: center;
 }
 .scroll img{
-    width: 100px;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(340deg) brightness(107%) contrast(98%);
+    width: 80px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(340deg) brightness(107%) contrast(98%) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
 }
