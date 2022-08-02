@@ -1,5 +1,8 @@
+*{
+    font-family: 'Roboto';
+}
 .home{
-    background-image: url(img/Asado.png);
+    background-image: url(img/Asado2.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -10,6 +13,8 @@ header{
     position: relative;
     position: fixed;
     width: 100%;
+    z-index: 100;
+    transition: 0.4s;
 }
 .nav{
     height: 4rem;
@@ -21,15 +26,12 @@ header{
     display: flex;
     justify-content: space-between;
     text-align: center;
-    font-family: 'Roboto';
     font-weight: 700;
     
 }
 .logo a{
     text-decoration: none;
-    color: #191919;
-    text-shadow: 2px 2px 5px #ffffff;
-    font-family: 'Roboto';
+    color: #757575;
     font-weight: 700;
 }
 .nav ul li{
@@ -55,21 +57,21 @@ header{
 /* -------------------- */
 .nav ul li a{
     text-decoration: none;
-    font-family: 'Roboto';
     color: white;
     text-shadow: 2px 2px 2px #191919;
 }
 /* FRASE PRINCIPA */
 .frase{
     display: flex;
-    height: 80vh;
+    height: 90vh;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 .frase h1{
+    font-weight: 700;
     color: white;
-    font-size: 5rem;
+    font-size: 8rem;
     text-shadow: 2px 2px 5px #191919;
 }
 /* scroll img */
@@ -81,4 +83,25 @@ header{
 .scroll img{
     width: 80px;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(340deg) brightness(107%) contrast(98%) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
+}
+/* container */
+.container{
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 50px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.container div{
+    width: 80%;
+    margin: 20px;
+}
+.card-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: 80%;
+    text-align: left;
 }
