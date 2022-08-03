@@ -81,10 +81,10 @@ header{
     justify-content: center;
 }
 .scroll img{
-    width: 80px;
+    width: 50px;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(340deg) brightness(107%) contrast(98%) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
 }
-/* container */
+/* CONTAINER */
 .container{
     padding-top: 50px;
     align-items: center;
@@ -94,14 +94,35 @@ header{
     text-align: center;
     flex-wrap: wrap;
 }
+/* RECETAS */
+.recipe_description{
+    font-family: 'Square Peg', cursive;
+    font-size: xx-large;
+}
+
 .container div{
     width: 80%;
     margin: 20px;
 }
-.card-group{
+.group_cards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: left;
+}
+.card{
+    border: none;
+    margin-left: 200px;
+}
+.card img{
+    transition: 0.15s;
+}
+.card img:hover{
+    filter: drop-shadow(0px 2px 2px rgba(88, 87, 83, 0.7));
+}
+.card-body{
+    padding: 0;
+}
+.card-body h5{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
 }
