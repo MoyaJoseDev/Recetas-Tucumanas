@@ -28,8 +28,6 @@ header{
     display: flex;
     justify-content: space-between;
     text-align: center;
-    font-weight: 700;
-    
 }
 .logo a{
     text-decoration: none;
@@ -209,4 +207,48 @@ footer{
 .redes li:hover{
     background-color: rgba(255, 217, 0, 0.5);
     filter: none;
+}
+
+/* RESPINSIVE */
+@media (max-width:760px){
+    .logo{
+        width: 90%;
+    }
+    #menu ul li {
+        margin: 0 10px
+    }
+}
+@media (max-width:600px) {
+    #menu {
+        display: none;
+    }
+    .frase h1{
+        font-size: 6rem;
+    }
+    .group_cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .container{
+        width: 100%;
+    }
+    form{
+        width: 80%;
+    }
+}
+@media (max-width:500px){
+    .group_cards{
+        grid-template-columns: 1fr;
+    }
+    
+    .frase h1{
+        font-size: 5rem;
+    }
+
+    .redes li{
+        margin: 0 10px;
+    }
+    
+    form .item{
+        display: block;
+    }
 }
