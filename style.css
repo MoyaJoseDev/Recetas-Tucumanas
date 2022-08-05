@@ -1,5 +1,7 @@
 *{
     font-family: 'Roboto';
+    --dorado:rgb(255, 217, 0);
+    --fondo:#191919;
 }
 .home{
     background-image: url(img/background1.jpg);
@@ -45,7 +47,7 @@ header{
     content: "";
     height:3px;
     width:0;
-    background:rgb(253, 201, 89);
+    background: var(--dorado);
     position:absolute;
     left: 0;
     bottom: -12px;
@@ -58,7 +60,7 @@ header{
 .nav ul li a{
     text-decoration: none;
     color: white;
-    text-shadow: 2px 2px 2px #191919;
+    text-shadow: 2px 2px 2px var(--fondo);
 }
 /* FRASE PRINCIPA */
 .frase{
@@ -72,7 +74,7 @@ header{
     font-weight: 700;
     color: white;
     font-size: 8rem;
-    text-shadow: 2px 2px 5px #191919;
+    text-shadow: 2px 2px 5px var(--fondo);
 }
 /* scroll img */
 .scroll{
@@ -183,4 +185,28 @@ form .action,input{
 }
 form .action input{
     height: 35px;
+}
+
+/* FOOTER */
+footer{
+    background-color: var(--fondo);
+}
+.redes li img{
+    width: 30px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(340deg) brightness(107%) contrast(98%);
+    transition: 0.2s;
+}
+.redes li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.redes li:hover{
+    background-color: rgba(255, 217, 0, 0.5);
+    filter: none;
 }
