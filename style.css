@@ -96,7 +96,8 @@ header{
 }
 /* RECETAS */
 .recipe_description{
-    font-family: 'Square Peg', cursive;
+    
+    font-family: 'Nunito', sans-serif;
     font-size: xx-large;
 }
 
