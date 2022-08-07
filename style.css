@@ -3,7 +3,7 @@
     --dorado:rgb(255, 217, 0);
     --fondo:#191919;
 }
-.home{
+#home{
     background-image: url(img/background1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -210,12 +210,21 @@ footer{
 }
 
 /* RESPINSIVE */
+@media (max-width:900px){
+    
+    .group_cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
 @media (max-width:760px){
     .logo{
         width: 90%;
     }
     #menu ul li {
         margin: 0 10px
+    }
+    .group_cards{
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media (max-width:600px) {
